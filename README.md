@@ -1,6 +1,8 @@
 # CanvasAuditHistory
 <img width="806" height="467" alt="image" src="https://github.com/user-attachments/assets/bb52279a-d967-4b6c-b72a-537eac25a11c" />
 
+> **This is an early preview of the solution, I would appreciate testing and contributions.**
+
 ## Overview
 
 Model-Driven apps have always allowed the user to view the native Dataverse audit history for a record. For a long time, I've wanted a way to view the Dataverse audit history for a record within a Canvas app. This solution enables that - providing a fast, responsive and clean view of the Dataverse audit history for a given record within a Canvas app.
