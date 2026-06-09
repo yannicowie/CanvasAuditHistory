@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CanvasAppAuditHistoryViewer.csproj">
+    <BuildType Project="Release" />
+  </Project>
+</Solution>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Yc" constructor="CanvasAuditHistory" version="0.0.5" display-name-key="Canvas Audit History" description-key="Displays Dataverse audit history" control-type="standard">
+    <external-service-usage enabled="false" />
+    <property name="auditDataJson" display-name-key="Audit Data JSON" description-key="JSON string from Dataverse" of-type="Multiple" usage="input" required="true" />
+    <property name="fieldNameDisplay" display-name-key="Field Name Display" description-key="How to display field names" of-type="Enum" usage="input" required="true">
+      <value name="DisplayName" display-name-key="Display Name Only" default="true">DisplayName</value>
+      <value name="LogicalName" display-name-key="Logical Name Only">LogicalName</value>
+      <value name="Both" display-name-key="Both (Display Name [logical_name])">Both</value>
+  </property>
+
+<property name="dateFormat" display-name-key="Date Format" description-key="Date rendering style" of-type="Enum" usage="input" required="true">
+    <value name="Local" display-name-key="User Local Settings" default="true">Local</value>
+    <value name="US" display-name-key="US Format (MM/DD/YYYY)">US</value>
+    <value name="UK" display-name-key="UK Format (DD/MM/YYYY)">UK</value>
+    <value name="ISO" display-name-key="ISO Format (YYYY/MM/DD)">ISO</value>
+</property>
+
+  <property name="refreshTrigger" display-name-key="Refresh Trigger" description-key="Output value that increments when refresh is clicked" of-type="Whole.None" usage="bound" required="false" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
